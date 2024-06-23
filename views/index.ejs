@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio
+  </title>
+  <link rel="stylesheet" type="text/css" href="/styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<body>
+
+  <%- include('header.ejs') %>
+
+  <section id="home">
+
+    <div class="home-container animation-fade-in">
+      <div class="vertical-part-1">
+        <div class="name-block">
+        <h1 style="display: inline-block;">Hello, I am</h1>
+        <h1 style="display: inline-block; overflow: hidden;"><span class="name-animation">Ahmed</span></h1>
+        </div>
+        <p>I am a full-stack developer.</p>
+        <a class="btn btn-primary" href="#contact">Contact Me</a>
+        <a href="/assets/Ahmed_Shebl_Resume.pdf" download="Ahmed_Shebl_Resume.pdf" class="btn btn-primary">
+          Download CV
+      </a>      
+      </div>
+      <div class="vertical-part-2">
+        <img class="avatar" src="/images/avatar.jpg" alt="avatar-img" >
+      </div>
+    </div>
+
+  </section>
+
+
+  <section id="about" >
+
+    <div class="about-container">
+    <article>
+      <section class="card">
+        <div class="text-content">
+          <h1 style="margin-bottom: 20px; font-size: 50px; text-decoration: underline;">About Me</h3>
+          <div class="cont1">
+          <img src="/images/code.svg" >
+          <h3>Frontend Developer</h3>
+           </div>
+          <p>I am a passionate front-end developer with a knack for creating responsive, optimized websites.</p>
+          <div class="cont1">
+          <img src="/images/back.svg" >
+          <h3>Backend Developer</h3>  
+          </div>
+          <p>I am a dedicated back-end developer with a strong background in creating fast optimized systems and APIs.</p>
+          <div class="cont1">
+          <img src="/images/college.svg" width="32px" height="32px" >
+          <h3>My Education</h3>
+          </div>
+          <p style="margin-bottom: 0;">I graduated from Cairo university. My education has provided me with a solid foundation in front-end and back-end development.</p>
+          <div class="tweaks">
+          <h1> 
+            <span class="dancing-letter" style="--i: 1">I</span>
+            <span class="dancing-letter" style="--i: 2">L</span> 
+            <span class="dancing-letter" style="--i: 3">O</span> 
+            <span class="dancing-letter" style="--i: 4">V</span> 
+            <span class="dancing-letter" style="--i: 5">E</span> 
+            <span class="dancing-letter" style="--i: 6">C</span> 
+            <span class="dancing-letter" style="--i: 7">O</span> 
+            <span class="dancing-letter" style="--i: 8">D</span> 
+            <span class="dancing-letter" style="--i: 9">I</span> 
+            <span class="dancing-letter" style="--i: 10">N</span> 
+            <span class="dancing-letter" style="--i: 11">G</span>               
+            </h1> 
+          </div>
+          <a href="#contact">Contact Me</a>
+        </div>
+        <div class="visual">
+          <img src="/images/bg.png" alt="card-background" />
+        </div>
+      </section> 
+    </article>
+  </div>
+
+  </section>
+
+
+   <section id="skills">
+    <h2 class="skills-header">My Top Skills</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <img src="/images/html.png" alt="HTML5">
+            <span class="tooltip">HTML5</span>
+        </div>
+        <div class="skill">
+            <img src="/images/css.png" alt="CSS3">
+            <span class="tooltip">CSS3</span>
+        </div>
+        <div class="skill">
+            <img src="/images/js.png" alt="JavaScript">
+            <span class="tooltip">JavaScript</span>
+        </div>
+    </div>
+    <div class="skills-container">
+        <div class="skill">
+            <img src="/images/nodejs.png" alt="NodeJS">
+            <span class="tooltip">NodeJS</span>
+        </div>
+        <div class="skill">
+            <img src="/images/react.png" alt="React">
+            <span class="tooltip">React</span>
+        </div>
+        <div class="skill">
+            <img src="/images/postgress.png" alt="Postgres">
+            <span class="tooltip">Postgres</span>
+        </div>
+    </div>
+</section>
+
+
+
+
+  <section id="projects">
+
+  <div class="projects-container ">
+    <h1 class="text-projects">Check out some of my projects!</h1>
+    <div class="cards-container">
+
+    
+
+    <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/weather1.png" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/weather2.png" class="d-block w-100" alt="Slide 2">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+
+    <div id="carouselExampleIndicators3" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/myNotes.png" class="d-block w-100" alt="couple">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/myNotes2.png" class="d-block w-100" alt="dog">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/myNotes3.png" class="d-block w-100" alt="family">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/movies2.png" class="d-block w-100" alt="couple">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/movies5.png" class="d-block w-100" alt="dog">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/movies.png" class="d-block w-100" alt="family">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    
+  </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="big-container-contact">
+    <div class="container-contact">
+      <div class="vertical-part-1">
+        <h1>Contact Me!</h1>
+        <h2>Feel free to reach out!</h2>
+      </div>
+      <div class="vertical-part-two">
+        <div class="contact-info">
+          <img src="/images/github.svg" alt="Github">    
+          <p class="info">github.com/AhmedShebl2000</p>
+        </div>
+        <div class="contact-info">
+          <img src="/images/linkedin.svg" alt="LinkedIn">    
+          <p class="info">linkedin.com/in/ahmed-shebl-0914691a3/</p>
+        </div>
+        <div class="contact-info">
+          <img style="margin-left: 2px;" src="/images/email.svg" alt="Email">    
+          <p class="info">ahmedshebl1616@gmail.com</p>
+        </div>
+
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
+
+</body>
+
+
+<section id="footer">
+  Created by Ahmed Shebl, 2024.
+</section>
+
+</html>
